@@ -3,11 +3,10 @@ class Robot:
     def __init__(self,name):
         self.name=name
         self.health=100
-        self.active_weapon()
+        #self.active_weapon()
     def attack(self,dino):
         dino.health=dino.health-self.active_weapon().attack_power
-        #return dino.health
-        #print(health)
+        
     def active_weapon(self):
         lazer=Weapon('Lazer',50)
         Sword=Weapon('Sword',100)

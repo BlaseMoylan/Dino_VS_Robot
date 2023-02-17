@@ -2,10 +2,10 @@ from robot import Robot
 from dino import Dino
 class Battlefield:
     def __init__(self):
+        self.display_welcome()
         self.robot=Robot(input('what is the robot name? '))
         self.dino=Dino(input('What is the dino name? '),25)
     def run_game(self):
-        self.display_welcome()
         self.battle_phase()
         self.display_winner()
 
