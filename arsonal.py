@@ -14,7 +14,7 @@ class Arsonal:
             if selected_weapon in arsonal_names:
                 name=False
             else:
-                print('this is not kone of the options!Please try again!')
+                print('this is not one of the options!Please try again!')
         for i in arsonal_names:
             if selected_weapon==i:
                 index=arsonal_names.index(i)

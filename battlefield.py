@@ -1,7 +1,4 @@
 
-#also I want to make a limit on how many times rockets can be used
-#also need to do more testing with edge cases
-#then need to refactor and clean up my code
 from fleet import Fleet
 from herd import Herd
 

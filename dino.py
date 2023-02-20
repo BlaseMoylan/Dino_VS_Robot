@@ -1,8 +1,18 @@
-
+import random
 class Dino:
-    def __init__(self,name,attack_power):
+    def __init__(self,name):
         self.name=name
-        self.attack_power=attack_power
         self.health=1000
     def attack(self,robot):
-        robot.health=robot.health-self.attack_power
+        claws=25
+        charge=50
+        bite=75
+        attack_names=['claws','charge','bite']
+        attack=[claws,charge,bite]
+        attack_damage=random.choice(attack)
+        for i in attack:
+            if i==attack_damage:
+                index=attack.index(i)
+                name=attack_names[index]
+                print(f'{self.name} used {name}')
+        robot.health=robot.health-attack_damage
