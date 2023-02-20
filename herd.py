@@ -13,6 +13,6 @@ class Herd:
         list_of_dinos=[]
         count=0
         while count<number:
-            list_of_dinos.append(Dino(input('what is the dino name? '),25))
+            list_of_dinos.append(Dino(input('what is the dino name? ')))
             count+=1
         return list_of_dinos
