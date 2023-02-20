@@ -6,4 +6,3 @@ class Dino:
         self.health=1000
     def attack(self,robot):
         robot.health=robot.health-self.attack_power
-        #return robot.health
