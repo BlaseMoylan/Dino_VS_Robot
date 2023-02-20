@@ -25,17 +25,22 @@ class Battlefield:
         dinos=self.dinos()
         robots=self.robots()
         num=0
-        if len(dinos)<len(robots):
-            num=len(dinos)-1
-        elif len(robots)<len(dinos):
-            num=len(robots)-1
-        # elif len(robots)
 
         while dinos!=[] and robots!=[]:
+            if len(dinos)<len(robots):
+                num=len(dinos)
+            elif len(robots)<len(dinos):
+                num=len(robots)
+            else:
+                num=len(robots)
+
             for n in range(num):
+                if n > len(dinos)-1:
+                    n=len(dinos)-1
+                elif n > len(robots)-1:
+                    n=len(robots)-1
                 dino=dinos[n]
                 robot=robots[n]
-                #while self.dino.health>0 and self.robot.health>0:
                 dino.attack(robot)
                 robot.attack(dino)
                 print(f'{dino.name} health is: {dino.health}\n{robot.name} health is: {robot.health}')
