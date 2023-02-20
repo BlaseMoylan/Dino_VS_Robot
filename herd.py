@@ -1,5 +1,6 @@
 from dino import Dino
 class Herd:
+    
     def dinos(self):
         num=True
         while num==True:

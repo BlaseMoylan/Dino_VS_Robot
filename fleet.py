@@ -1,5 +1,6 @@
 from robot import Robot
 class Fleet:
+    
     def robots(self):
         num=True
         while num==True:
