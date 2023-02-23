@@ -19,7 +19,7 @@ class Battlefield:
         robots=self.robots.robots()
         num=0
 
-        while dinos!=[] and robots!=[]:
+        while len(dinos)!=0 and len(robots)!=0:
             if len(dinos)<len(robots):
                 num=len(dinos)
             elif len(robots)<len(dinos):
@@ -45,7 +45,7 @@ class Battlefield:
                     dinos.remove(dino)
                 elif robot.health<1:
                     robots.remove(robot)
-        if dinos!=[]:
+        if len(dinos)!=0:
             return 'dinos'
         else:
             return 'robots'
