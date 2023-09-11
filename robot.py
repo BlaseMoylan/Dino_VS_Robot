@@ -30,7 +30,7 @@ class Robot:
         """
         self.name = name
         self.health = 100
-        self.weapons = Arsenal()
+        self.weapons = Arsonal()
 
     def attack(self, dino):
         """
